@@ -11,7 +11,7 @@ var status = 7;  // 1 - online, 7 - invisible
 
 
 user = new steamUser();
-user.logOn({"squadteam9": username, "bravoteam": password, "QFDGV": steamTotp.generateAuthCode(shared_secret)});
+user.logOn({"": username, "": password, "": steamTotp.generateAuthCode(shared_secret)});
 user.on('loggedOn', () => {
 	if (user.steamID != null) console.log(user.steamID + ' - Successfully logged on');
 	user.setPersona(status);               
